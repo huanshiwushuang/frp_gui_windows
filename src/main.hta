@@ -2,7 +2,7 @@
  * @Description: 主界面
  * @Author: your name
  * @Date: 2019-10-25 20:12:58
- * @LastEditTime: 2019-10-26 00:08:20
+ * @LastEditTime: 2019-10-27 19:48:28
  * @LastEditors: Please set LastEditors
  -->
 <!-- API参考地址：https://www.cnblogs.com/vitrox/p/5135642.html -->
@@ -28,51 +28,22 @@
             window.close();
         }
     </script>
-    <script type="text/javascript">
-        // 在窗口出现之前-可以考虑设置窗口的位置和大小等
-        var config = {
-            width: 800,
-            height: 400
-        }
-        // 没有设置 windowState 才生效
-        window.resizeTo(config.width, config.height);
-        window.moveTo((window.screen.width - config.width) / 2, (window.screen.height - config.height) / 2);
+    <!-- 窗口样式 -->
+    <script src="./js/windowStyle.js" type="text/javascript"></script>
+    <script>
     </script>
-    <HTA:APPLICATION
-        id="id" 
-        icon="./img/ico.ico" 
-        applicationName="app" 
-        border="dialog" 
-        borderSytle="Normal" 
-        caption="yes"
-        contextMenu="yes" 
-        innerBorder="yes" 
-        navigable="yes" 
-        maximizeButton="yes" 
-        minimizeButton="yes" 
-        scroll="yes"
-        scrollFlat="yes" 
-        selection="yes" 
-        commandLine="保存了HTA程序的启动参数，无法设置，是受调用传递的参数控制的" 
-        showInTaskbar="yes"
-        singleInstance="no" 
-        sysMenu="yes" 
-        version="1.0.0" 
-        windowState="maximize" />
-    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        // 自己的 JS 代码
-    </script>
+    <!-- require.js -->
+    <script src="../lib/js/require.js" type="text/javascript" defer="defer" data-main="./js/main.js"></script>
+
     <style type="text/css">
         /*自己的 CSS 代码*/
     </style>
 </head>
 
 <body>
-    这里开始才是正式的代码！
-    <script>
-
-    </script>
+    <div>
+        123
+    </div>
 </body>
 </body>
 

@@ -2,7 +2,7 @@
 ' @Description: HTA启动文件
 ' @Author: your name
 ' @Date: 2019-10-25 21:19:24
-' @LastEditTime: 2019-10-25 22:32:41
+' @LastEditTime: 2019-10-26 16:33:17
 ' @LastEditors: Please set LastEditors
 '
 Set ws = CreateObject("Wscript.Shell")
