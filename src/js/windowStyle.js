@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-10-25 20:12:58
- * @LastEditTime: 2019-10-27 02:40:43
+ * @LastEditTime: 2019-10-29 00:06:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \studyd:\code\frp_gui_windows\src\js\windowStyle.js
@@ -9,11 +9,11 @@
 document.write(
   [
     '<HTA:APPLICATION',
-    '    id="id" ',
+    '    id="App" ',
     '    icon="./img/ico.ico" ',
     '    applicationName="frp_gui_windows" ',
-    '    border="dialog" ',
-    '    borderSytle="Sunken" ',
+    '    border="Thin" ',
+    '    borderSytle="Normal" ',
     '    caption="yes"',
     '    contextMenu="no" ',
     '    innerBorder="no" ',
@@ -32,15 +32,11 @@ document.write(
   ].join(' ')
 )
 
-// 在窗口出现之前-可以考虑设置窗口的位置和大小等
-var config = {
-    width: 800,
-    height: 400
-}
-// 没有设置 windowState 才生效
-window.resizeTo(config.width, config.height);
+// // 在窗口出现之前-可以考虑设置窗口的位置和大小等
+// var config = {
+//     width: 800,
+//     height: 400
+// }
+// // 没有设置 windowState 才生效
+// window.resizeTo(config.width, config.height);
 // window.moveTo((window.screen.width - config.width) / 2, (window.screen.height - config.height) / 2);
-setTimeout(function () {
-
-    window.moveTo((window.screen.width - config.width) / 2, (window.screen.height - config.height) / 2);
-},2000)
