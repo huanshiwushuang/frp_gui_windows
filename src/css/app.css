@@ -1,0 +1,10 @@
+#app .nav {
+    width: 200px;
+    background: #f00;
+}
+#app .content {
+    top: 0;
+    left: 200px;
+    right: 0;
+    background: #0f0;
+}

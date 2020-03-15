@@ -1,2 +1,67 @@
-hello world
-<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572283542738&di=269e42e71efd5a2bd7be5d66d039c2c5&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F6b0018f329217b50b48d9478776a24c9825cbef7cd86-IrED2R_fw658">
+<!--
+ * @Author: your name
+ * @Date: 2020-03-07 11:01:06
+ * @LastEditTime: 2020-03-15 16:31:27
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \frp_gui_windows\src\main.hta
+ -->
+<!-- API参考地址：https://www.cnblogs.com/vitrox/p/5135642.html -->
+<!-- 重要提示：如果在 html 文档之前，放置了的纯文本，那么会被浏览器解析放到 body 标签里面 -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- 严重注意：meta必须在最上面才能起作用 -->
+    <!-- 特别注意：貌似只有 IE9 及以下才支持 HTA:APPLICATION 中的 icon 设置-->
+    <!-- 这里指定为 IE8，兼容 XP 系统 -->
+    <meta http-equiv="x-ua-compatible" content="ie=8">
+    <meta charset="UTF-8">
+    <title>酷文字</title>
+    <!-- 如果合并了 ico 图标和 hta 文件，用于清空合并后文件前部的无效的 ico 数据 -->
+    <!-- 【目前已知在某些 win10 上ico显示在了界面中，而不是预期的任务栏图标】 -->
+    <!-- <script type="text/javascript">
+        document.body && (document.body.innerHTML = '')
+    </script> -->
+    <!-- IE版本过低提示 -->
+    <script>
+        if (document.documentMode < 8) {
+            alert('您的IE版本太低了，最低IE8');
+            window.close();
+        }
+    </script>
+    <!-- 窗口样式 -->
+    <script>
+        document.write(
+        [
+            '<HTA:APPLICATION',
+            '    id="kwz" ',
+            '    icon="ico.ico" ',
+            '    applicationName="酷文字" ',
+            '    border="Thin" ',
+            '    borderSytle="Normal" ',
+            '    caption="yes"',
+            '    contextMenu="no" ',
+            '    innerBorder="no" ',
+            '    navigable="yes" ',
+            '    maximizeButton="yes" ',
+            '    minimizeButton="yes" ',
+            '    scroll="yes"',
+            '    scrollFlat="yes" ',
+            '    selection="yes" ',
+            '    commandLine="保存了HTA程序的启动参数，无法设置，是受调用传递的参数控制的" ',
+            '    showInTaskbar="yes"',
+            '    singleInstance="yes" ',
+            '    sysMenu="yes" ',
+            '    version="1.0.0" ',
+            '    windowState="maximize" />'
+        ].join(' ')
+        )
+    </script>
+</head>
+
+<body>
+    1232
+</body>
+</bodym>
+
+</html>
