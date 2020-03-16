@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-03-15 23:53:44
- * @LastEditTime: 2020-03-16 01:25:22
+ * @LastEditTime: 2020-03-16 23:37:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \frp_gui_windows\src\js\view_drag.js
@@ -20,10 +20,12 @@ define(function(){
         params.startWindowTop = null;
     }
     $('.view-drag').on('mousedown', function (e) {
-        isDown = true;
-        params.start = e
-        params.startWindowLeft = window.screenLeft
-        params.startWindowTop = window.screenTop
+        // isDown = true;
+        // params.start = e
+        // params.startWindowLeft = window.screenLeft
+        // params.startWindowTop = window.screenTop
+        var asd = window.DX.GetActiveWindow;
+        window.DX.SendMessage(asd, 0x112, 61458, 0)
     }).on('mousemove', function (e) {
         if (isDown) {
             params.curr = e;
@@ -35,7 +37,7 @@ define(function(){
         isDown = false;
     })
     // 任何地方松开鼠标都是结束
-    $(document.body).on('mouseup', function (e) {
+    $(document).on('mouseup', function (e) {
         isDown = false;
         params.end = e;
     })

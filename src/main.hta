@@ -1,7 +1,7 @@
 ﻿<!--
  * @Author: your name
  * @Date: 2020-03-07 11:01:06
- * @LastEditTime: 2020-03-16 00:18:11
+ * @LastEditTime: 2020-03-16 23:36:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \frp_gui_windows\src\main.hta
@@ -56,12 +56,18 @@
 
 <body>
     <div id="app" class="pr h">
-        <div class="nav h view-drag">
-            
+
+        <div id="nav"class="h view-drag">
+            123
         </div>
-        <div class="content h pa"></div>
+        <div id="content" class="h pa"></div>
     </div>
+    <script>
+        DX = new ActiveXObject ("DynamicWrapperX");
+        DX.Register ("user32", "GetActiveWindow", "r=h");
+        DX.Register ("user32", "SendMessage", "i=hlll", "r=l");
+        window.DX = DX;
+    </script>
 </body>
-</bodym>
 
 </html>

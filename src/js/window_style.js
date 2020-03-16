@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-03-07 11:01:06
- * @LastEditTime: 2020-03-15 23:42:46
+ * @LastEditTime: 2020-03-16 23:01:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \frp_gui_windows\src\js\windowStyle.js
@@ -26,7 +26,7 @@ document.write(
     // Sunken     凹进的3D边框
     '    borderSytle="Raised" ',
     // 是否显示窗口顶部部分
-    '    caption="no"',
+    '    caption="yes"',
     // 是否显示页面右键菜单
     '    contextMenu="no" ',
     // 是否显示内部边框的3D边界，默认值Yes
@@ -41,7 +41,7 @@ document.write(
     '    scrollFlat="yes" ',
     // 设置内容是否可以被鼠标或键盘选中
     '    selection="yes" ',
-    '    commandLine="保存了HTA程序的启动参数，无法设置，是受调用传递的参数控制的" ',
+    '    commandLine="保存了HTA程序的启动参数" ',
     '    showInTaskbar="yes"',
     // 是否实例唯一，applicationName 区分
     '    singleInstance="yes" ',

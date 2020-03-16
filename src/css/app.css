@@ -1,8 +1,8 @@
-#app .nav {
+#nav {
     width: 200px;
     background: #f00;
 }
-#app .content {
+#content {
     top: 0;
     left: 200px;
     right: 0;
